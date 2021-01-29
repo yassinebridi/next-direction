@@ -16,7 +16,7 @@ interface UseDirModeProps {
 
 const DirModeContext = createContext<UseDirModeProps>({
   setDirMode: _ => {},
-  dirmode: 'ltr',
+  dirmode: undefined,
 });
 export const useDirMode = () => useContext(DirModeContext);
 
@@ -29,7 +29,7 @@ export interface DirModeProviderProps {
 export const DirModeProvider: React.FC<DirModeProviderProps> = ({
   forcedDirMode,
   storageKey = 'dirmode',
-  defaultDirMode = 'rtl',
+  defaultDirMode = 'ltr',
   children,
 }) => {
   const [dirmode, setDirModeState] = useState<UseDirModeProps['dirmode']>(() =>
@@ -139,7 +139,7 @@ const DirModeScript = memo(
             key="next-dirmodes-script"
             dangerouslySetInnerHTML={{
               // prettier-ignore
-              __html: `!function(){try{${optimization}var t=localStorage.getItem("${storageKey}");if(!t)return localStorage.setItem("${storageKey}","${defaultDirMode}"),${updateDOM(defaultDirMode)};${''}${updateDOM('t', true)}}catch(t){}}();`
+              __html: `!function(){try{${optimization}var t=localStorage.getItem("${storageKey}");if(!t)return localStorage.setItem("${storageKey}","${defaultDirMode}"),${updateDOM(defaultDirMode)};${updateDOM('t', true)}}catch(t){}}();`
             }}
           />
         )}
