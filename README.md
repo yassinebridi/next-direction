@@ -9,7 +9,7 @@ A Next.js package, that makes working with directions a breeze.
 - Disable flashing when refreshing pages
 - Force pages to a specific direction
 
-![Preview](https://user-images.githubusercontent.com/18403595/106312235-a509c800-6266-11eb-859b-1dd6edb671ee.gif)
+![Preview](https://user-images.githubusercontent.com/18403595/106338627-84586700-6294-11eb-81d4-387cda9d1525.gif)
 > Check out the [Live Example](https://next-direction.vercel.app/) to try it for yourself.
 
 ## Installation
@@ -118,6 +118,10 @@ const DirModeChanger = () => {
 ```
 
 To avoid Content Layout Shift, consider rendering a skeleton until mounted on the client side.
+
+## You might like
+I created another plugin that makes working with bi-direction less painful with tailwind, check it out:
+https://github.com/yassinebridi/tailwind-direction
 
 ## Credits
 This project's code is heavily inspired by this great [project](https://github.com/pacocoursey/next-themes)
