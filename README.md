@@ -1,7 +1,4 @@
-# next-direction 
-![next-direction minzip package size](https://img.shields.io/bundlephobia/minzip/next-direction)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![Twitter Follow](https://img.shields.io/twitter/follow/yassinebridi.svg?style=social&label=Follow)](https://twitter.com/yassinebridi)
+# next-direction ![next-direction minzip package size](https://img.shields.io/bundlephobia/minzip/next-direction) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) [![Twitter Follow](https://img.shields.io/twitter/follow/yassinebridi.svg?style=social&label=Follow)](https://twitter.com/yassinebridi)
 
 A Next.js package, that makes working with directions a breeze.
 - No flash on load (both SSR and SSG)
